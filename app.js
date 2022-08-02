@@ -59,7 +59,7 @@ var employee = {
         console.log("--------------------------");
         console.log("--------------------------");
         var id = 1000;
-    for(var i = 0; i < 4; i ++) {
+    for(var i = 0; i < 7; i ++) {
         this[i]["employeeID"] = id;
         console.log("employee id after adding id method =  " + this[i]["employeeID"]);
         id ++;
