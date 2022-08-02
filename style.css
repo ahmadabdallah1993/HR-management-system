@@ -4,11 +4,11 @@ body{
 
 h1{
     font-size: 50px;
-    margin-left: 500px;
+    margin-left: 350px;
 }
 
 nav{
-    font-size: 20px;
+    font-size: 30px;
 }
 
     
@@ -30,5 +30,5 @@ nav{
 
 
       footer{
-        margin-top: 300px;
+        margin-top: 500px;
       }
