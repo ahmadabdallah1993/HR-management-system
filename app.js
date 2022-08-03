@@ -1,10 +1,13 @@
+'use strict';
+
+
 var employee = {
     0: {
         employeeID: 0,
         fullName: "Ghazi Samer",
         department: "Administration", 
         level: "Senior",
-        imageURL: 0,
+        imageURL: "./image/pic.png",
         salary: 0
     },
     1: {
@@ -12,7 +15,7 @@ var employee = {
         fullName: "Lana Ali",
         department: "Finance",
         level: "Senior", 
-        imageURL: 0,
+        imageURL: "./image/pic.png",
         salary: 0
     },
     2: {
@@ -20,7 +23,7 @@ var employee = {
         fullName: "Tamara Ayoub",
         department: "Marketing",
         level: "Senior",
-        imageURL: 0,
+        imageURL: "./image/pic.png",
         salary: 0
     },
     3: {
@@ -28,7 +31,7 @@ var employee = {
         fullName: "Safi Walid",
         department: "Admenestration",
         level: "Mid-Senior",
-        imageURL: 0,
+        imageURL: "./image/pic.png",
         salary: 0
     },
     4: {
@@ -36,7 +39,7 @@ var employee = {
         fullName: "Omar Zaid",
         department: "Development",
         level: "Senior",
-        imageURL: 0,
+        imageURL: "./image/pic.png",
         salary: 0
     },
     5:{
@@ -44,7 +47,7 @@ var employee = {
         fullName: "Rana Saleh",
         department: "Development",
         level: "Junior",
-        imageURL: 0,
+        imageURL: "./image/pic.png",
         salary: 0
     },
     6: {
@@ -52,7 +55,7 @@ var employee = {
         fullName: "Hadi Ahmad",
         department: "Finance",
         level: "Mid-Senior",
-        imageURL: 0,
+        imageURL: "./image/pic.png",
         salary: 0
     },
     setID: function(){
