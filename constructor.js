@@ -35,6 +35,10 @@ Employee.prototype.salary = function() {
 }
 }
 
+Employee.prototype.render = function() {
+    document.write(`<p>Employee Name: ${this.fullName}</p><p>Department: ${this.department}</p><p>Salary: ${this.salary}</p><br>`)
+}
+
 
 
 const employeeNo1 = new Employee("Ghazi Samer", "Administration", "Senior", "./image/pic.png");
@@ -70,6 +74,16 @@ employeeNo4.salary();
 employeeNo5.salary();
 employeeNo6.salary();
 employeeNo7.salary();
+
+
+employeeNo1.render();
+employeeNo2.render();
+employeeNo3.render();
+employeeNo4.render();
+employeeNo5.render();
+employeeNo6.render();
+employeeNo7.render();
+
 
 
 
