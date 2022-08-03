@@ -1,14 +1,19 @@
 body{
-    background-color:rgb(175, 218, 255);
+    background-color:rgb(233, 254, 254);
 }
 
 h1{
     font-size: 50px;
     margin-left: 350px;
+    font-family: 'BhuTuka Expanded One', cursive;
+font-family: 'Ibarra Real Nova', serif;
 }
 
 nav{
+  color: black;
     font-size: 30px;
+    font-family: 'BhuTuka Expanded One', cursive;
+font-family: 'Ibarra Real Nova', serif;
 }
 
     
@@ -25,10 +30,17 @@ nav{
       
       li a {
         display: block;
-        padding: 20px;
+        padding: 30px;
       }
 
 
       footer{
-        margin-top: 500px;
+        margin-top: 100px;
+      }
+
+      p {
+        color: rgb(0, 0, 0);
+        font-family: 'BhuTuka Expanded One', cursive;
+font-family: 'Ibarra Real Nova', serif;
+font-size: 20px;
       }
