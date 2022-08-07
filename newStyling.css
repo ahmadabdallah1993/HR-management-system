@@ -51,7 +51,9 @@ main {
 }
 
 footer {
-    margin-top: 300px;
+    margin-top: 400px;
+    margin-right: 400px;
+    display: flex;
    
 }
 
