@@ -35,25 +35,103 @@ Employee.prototype.salary = function() {
 }
 }
 
+
+const body = document.getElementsByTagName('body');
+
+body[0].style.display = 'flex';
+body[0].style.width = '100%';
+body[0].style.flexWrap = 'wrap';
+body[0].style.justifyContent = 'space-between';
+
+
+
+
+
+
+
+
 Employee.prototype.render = function() {
-    document.write(`<p>Employee Name: ${this.fullName}</p><p>Department: ${this.department}</p><p>Salary: ${this.salary}</p><br>`)
+    // document.write(`<p>Employee Name: ${this.fullName}</p><p>Department: ${this.department}</p><p>Salary: ${this.salary}</p><br>`)
+
+
+    const divEl = document.createElement('div');
+
+    const imgEl = document.createElement('img');
+    imgEl.src= `${this.imageURL}`;
+    imgEl.alt=`${this.fullName}`;
+    imgEl.style.width = '70%';
+    divEl.appendChild(imgEl);
+    
+    const pEl = document.createElement('p');
+    pEl.textContent = `Name: ${this.fullName} -ID: ${this.employeeID}`;
+    divEl.appendChild(pEl);
+
+    const pEl2 = document.createElement('p');
+    pEl2.textContent = `Department: ${this.department} level: ${this.level}`;
+    divEl.appendChild(pEl2);
+
+    const pEl3 = document.createElement('p');
+    pEl3.textContent = `Salary: ${this.salary} JD`;
+    divEl.appendChild(pEl3);
+
+//    divEl.style.display ='flex';
+//    divEl.style.justifyContent = 'flex-start';
+   divEl.style.width = '200px';
+   
+
+   divEl.style.margin = '70px 60px';
+//    divEl.style.marginTop = '50px';
+//    divEl.style.gap = '10px';
+   
+   divEl.style.minHeight = '100px';
+   divEl.style.border = '5px';
+   divEl.style.flexWrap = 'wrap'; 
+   divEl.style.flexDirection = 'row';
+   divEl.style.backgroundColor = 'rgb(200, 228, 219)';
+   divEl.style.textAlign = 'center';
+   divEl.style.borderRadius = '20px';
+   
+   
+   
+//    divEl.style.flex = '0 0 20%';
+// divEl.style.justifyContent= 'space-around'
+// divEl.style.alignItems = 'centre'
+
+
+
+
+
+
+    body[0].appendChild(divEl);
 }
 
 
 
-const employeeNo1 = new Employee("Ghazi Samer", "Administration", "Senior", "./image/pic.png");
+body[0].classList.add('designBody');
 
-const employeeNo2 = new Employee("Lana Ali", "Finance", "Senior", "./image/pic.png");
+// const headerEl = document.getElementsByTagName('header');
+// headerEl.classList.add('designHeader');
+// body[0].appendChild('header');
 
-const employeeNo3 = new Employee("Tamara Ayoub", "Marketing", "Senior", "./image/pic.png");
 
-const employeeNo4 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/pic.png");
 
-const employeeNo5 = new Employee("Omar Zaid", "Development", "Senior", "./image/pic.png");
 
-const employeeNo6 = new Employee("Rana Saleh", "Development", "Junior", "./image/pic.png");
+
+
+
+const employeeNo1 = new Employee("Ghazi Samer", "Administration", "Senior", "./image/Ghazi.jpg");
+
+const employeeNo2 = new Employee("Lana Ali", "Finance", "Senior", "./image/Lana.jpg");
+
+const employeeNo3 = new Employee("Tamara Ayoub", "Marketing", "Senior", "./image/Tamara.jpg");
+
+const employeeNo4 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/Safi.jpg");
+
+const employeeNo5 = new Employee("Omar Zaid", "Development", "Senior", "./image/Omar.jpg");
+
+const employeeNo6 = new Employee("Rana Saleh", "Development", "Junior", "./image/Rana.jpg");
     
-const employeeNo7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/pic.png");
+const employeeNo7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/Hadi.jpg");
 
 
 
