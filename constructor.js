@@ -35,25 +35,63 @@ Employee.prototype.salary = function() {
 }
 }
 
+
+const body = document.getElementsByTagName('body');
+
+
 Employee.prototype.render = function() {
-    document.write(`<p>Employee Name: ${this.fullName}</p><p>Department: ${this.department}</p><p>Salary: ${this.salary}</p><br>`)
+    // document.write(`<p>Employee Name: ${this.fullName}</p><p>Department: ${this.department}</p><p>Salary: ${this.salary}</p><br>`)
+
+
+    const navEl = document.createElement('nav');
+
+    const imgEl = document.createElement('img');
+    imgEl.src= `${this.imageURL}`;
+    imgEl.alt=`${this.fullName}`;
+    navEl.appendChild(imgEl);
+    
+    const pEl = document.createElement('p');
+    pEl.textContent = `Name: ${this.fullName} -ID: ${this.employeeID}`;
+    navEl.appendChild(pEl);
+
+    const pEl2 = document.createElement('p');
+    pEl2.textContent = `Department: ${this.department} level: ${this.level}`;
+    navEl.appendChild(pEl2);
+
+    const pEl3 = document.createElement('p');
+    pEl3.textContent = `Salary: ${this.salary} JD`;
+    navEl.appendChild(pEl3);
+
+
+
+    body[0].appendChild(navEl)
+
+
+    //this.employeeID = employeeID;
+    // this.fullName = fullName;
+    // this.department = department;
+    // this.level = level;
+    // this.imageURL = imageURL;
+    //this.salary = salary;
+
+
 }
 
 
 
-const employeeNo1 = new Employee("Ghazi Samer", "Administration", "Senior", "./image/pic.png");
+const employeeNo1 = new Employee("Ghazi Samer", "Administration", "Senior", "./image/Ghazi.jpg");
 
-const employeeNo2 = new Employee("Lana Ali", "Finance", "Senior", "./image/pic.png");
+const employeeNo2 = new Employee("Lana Ali", "Finance", "Senior", "./image/Lana.jpg");
 
-const employeeNo3 = new Employee("Tamara Ayoub", "Marketing", "Senior", "./image/pic.png");
+const employeeNo3 = new Employee("Tamara Ayoub", "Marketing", "Senior", "./image/Tamara.jpg");
 
-const employeeNo4 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/pic.png");
+const employeeNo4 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/Safi.jpg");
 
-const employeeNo5 = new Employee("Omar Zaid", "Development", "Senior", "./image/pic.png");
+const employeeNo5 = new Employee("Omar Zaid", "Development", "Senior", "./image/Omar.jpg");
 
-const employeeNo6 = new Employee("Rana Saleh", "Development", "Junior", "./image/pic.png");
+const employeeNo6 = new Employee("Rana Saleh", "Development", "Junior", "./image/Rana.jpg");
     
-const employeeNo7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/pic.png");
+const employeeNo7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/Hadi.jpg");
 
 
 
