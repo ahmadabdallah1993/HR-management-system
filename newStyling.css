@@ -6,7 +6,7 @@
     font-family: 'Ibarra Real Nova', serif;
     font-family: 'Mouse Memoirs', sans-serif;
     line-height: 1.5;
-    background-color: rgb(243, 241, 238);
+    background-color: rgb(248, 247, 247);
     
 }
 
@@ -53,8 +53,8 @@ main {
 } */
 
 footer {
-    margin-top: 350px;
-    margin-right: 400px;
+    margin-top: 500px;
+    margin-right: 600px;
     display: flex;
    
 }

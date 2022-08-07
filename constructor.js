@@ -60,6 +60,7 @@ Employee.prototype.render = function() {
     imgEl.src= `${this.imageURL}`;
     imgEl.alt=`${this.fullName}`;
     imgEl.style.width = '70%';
+    imgEl.style.borderRadius = '40%'
     divEl.appendChild(imgEl);
     
     const pEl = document.createElement('p');
@@ -76,10 +77,11 @@ Employee.prototype.render = function() {
 
 //    divEl.style.display ='flex';
 //    divEl.style.justifyContent = 'flex-start';
-   divEl.style.width = '200px';
+   divEl.style.width = '300px';
+   divEl.style.height = '320px';
    
 
-   divEl.style.margin = '70px 60px';
+   divEl.style.margin = '80px 100px';
 //    divEl.style.marginTop = '50px';
 //    divEl.style.gap = '10px';
    
@@ -90,6 +92,7 @@ Employee.prototype.render = function() {
    divEl.style.backgroundColor = 'rgb(200, 228, 219)';
    divEl.style.textAlign = 'center';
    divEl.style.borderRadius = '20px';
+   divEl.style.backgroundSize = '100%'
    
    
    
@@ -125,13 +128,15 @@ const employeeNo2 = new Employee("Lana Ali", "Finance", "Senior", "./image/Lana.
 
 const employeeNo3 = new Employee("Tamara Ayoub", "Marketing", "Senior", "./image/Tamara.jpg");
 
-const employeeNo4 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/Safi.jpg");
+const employeeNo4 = new Employee("Omar Zaid", "Development", "Senior", "./image/Omar.jpg");
 
-const employeeNo5 = new Employee("Omar Zaid", "Development", "Senior", "./image/Omar.jpg");
+const employeeNo5 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/Safi.jpg");
 
-const employeeNo6 = new Employee("Rana Saleh", "Development", "Junior", "./image/Rana.jpg");
+const employeeNo6 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/Hadi.jpg");
+
+const employeeNo7 = new Employee("Rana Saleh", "Development", "Junior", "./image/Rana.jpg");
     
-const employeeNo7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/Hadi.jpg");
+
 
 
 
