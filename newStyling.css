@@ -6,6 +6,7 @@
     font-family: 'Ibarra Real Nova', serif;
     font-family: 'Mouse Memoirs', sans-serif;
     line-height: 1.5;
+    background-color: rgb(243, 241, 238);
     
 }
 
@@ -19,7 +20,7 @@
 header {
     position:fixed;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px 100px;
     display: flex;
     justify-content:space-between;
     
@@ -39,19 +40,20 @@ nav {
 }
 
 a {
+    
     text-decoration: none;
     text-transform: capitalize;
 
-    color: rgb(14, 14, 14);
+    color: rgb(0, 0, 0);
 }
-
+/* 
 main {
     height: 30vh;
     
-}
+} */
 
 footer {
-    margin-top: 400px;
+    margin-top: 350px;
     margin-right: 400px;
     display: flex;
    

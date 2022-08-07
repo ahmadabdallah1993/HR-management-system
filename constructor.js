@@ -77,14 +77,19 @@ Employee.prototype.render = function() {
 //    divEl.style.display ='flex';
 //    divEl.style.justifyContent = 'flex-start';
    divEl.style.width = '200px';
-   divEl.style.margin = '50px 60px';
+   
+
+   divEl.style.margin = '70px 60px';
 //    divEl.style.marginTop = '50px';
 //    divEl.style.gap = '10px';
    
    divEl.style.minHeight = '100px';
-   divEl.style.border = '1px';
+   divEl.style.border = '5px';
    divEl.style.flexWrap = 'wrap'; 
    divEl.style.flexDirection = 'row';
+   divEl.style.backgroundColor = 'rgb(200, 228, 219)';
+   divEl.style.textAlign = 'center';
+   divEl.style.borderRadius = '20px';
    
    
    
