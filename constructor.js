@@ -38,6 +38,17 @@ Employee.prototype.salary = function() {
 
 const body = document.getElementsByTagName('body');
 
+body[0].style.display = 'flex';
+body[0].style.width = '100%';
+body[0].style.flexWrap = 'wrap';
+body[0].style.justifyContent = 'space-between';
+
+
+
+
+
+
+
 
 Employee.prototype.render = function() {
     // document.write(`<p>Employee Name: ${this.fullName}</p><p>Department: ${this.department}</p><p>Salary: ${this.salary}</p><br>`)
@@ -48,7 +59,7 @@ Employee.prototype.render = function() {
     const imgEl = document.createElement('img');
     imgEl.src= `${this.imageURL}`;
     imgEl.alt=`${this.fullName}`;
-    imgEl.style.width = '30%';
+    imgEl.style.width = '70%';
     divEl.appendChild(imgEl);
     
     const pEl = document.createElement('p');
@@ -63,25 +74,39 @@ Employee.prototype.render = function() {
     pEl3.textContent = `Salary: ${this.salary} JD`;
     divEl.appendChild(pEl3);
 
+//    divEl.style.display ='flex';
+//    divEl.style.justifyContent = 'flex-start';
+   divEl.style.width = '200px';
+   divEl.style.margin = '50px 60px';
+//    divEl.style.marginTop = '50px';
+//    divEl.style.gap = '10px';
+   
+   divEl.style.minHeight = '100px';
+   divEl.style.border = '1px';
+   divEl.style.flexWrap = 'wrap'; 
+   divEl.style.flexDirection = 'row';
+   
+   
+   
+//    divEl.style.flex = '0 0 20%';
+// divEl.style.justifyContent= 'space-around'
+// divEl.style.alignItems = 'centre'
+
+
+
+
+
+
     body[0].appendChild(divEl);
 }
 
 
 
-body[0].classList.add('b');
+body[0].classList.add('designBody');
 
-const h1El = document.getElementsByTagName('h1');
-h1El[0].classList.add('header');
-
-const navEl = document.getElementById('n');
-navEl.classList.add('header');
-navEl.classList.add('header-nav');
-
-const logooEl = document.getElementById('logoo');
-logooEl.classList.add('header');
-logooEl.classList.add('header-logo');
-
-
+// const headerEl = document.getElementsByTagName('header');
+// headerEl.classList.add('designHeader');
+// body[0].appendChild('header');
 
 
 
