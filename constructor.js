@@ -43,39 +43,49 @@ Employee.prototype.render = function() {
     // document.write(`<p>Employee Name: ${this.fullName}</p><p>Department: ${this.department}</p><p>Salary: ${this.salary}</p><br>`)
 
 
-    const navEl = document.createElement('nav');
+    const divEl = document.createElement('div');
 
     const imgEl = document.createElement('img');
     imgEl.src= `${this.imageURL}`;
     imgEl.alt=`${this.fullName}`;
-    navEl.appendChild(imgEl);
+    imgEl.style.width = '30%';
+    divEl.appendChild(imgEl);
     
     const pEl = document.createElement('p');
     pEl.textContent = `Name: ${this.fullName} -ID: ${this.employeeID}`;
-    navEl.appendChild(pEl);
+    divEl.appendChild(pEl);
 
     const pEl2 = document.createElement('p');
     pEl2.textContent = `Department: ${this.department} level: ${this.level}`;
-    navEl.appendChild(pEl2);
+    divEl.appendChild(pEl2);
 
     const pEl3 = document.createElement('p');
     pEl3.textContent = `Salary: ${this.salary} JD`;
-    navEl.appendChild(pEl3);
+    divEl.appendChild(pEl3);
 
-
-
-    body[0].appendChild(navEl)
-
-
-    //this.employeeID = employeeID;
-    // this.fullName = fullName;
-    // this.department = department;
-    // this.level = level;
-    // this.imageURL = imageURL;
-    //this.salary = salary;
-
-
+    body[0].appendChild(divEl);
 }
+
+
+
+body[0].classList.add('b');
+
+const h1El = document.getElementsByTagName('h1');
+h1El[0].classList.add('header');
+
+const navEl = document.getElementById('n');
+navEl.classList.add('header');
+navEl.classList.add('header-nav');
+
+const logooEl = document.getElementById('logoo');
+logooEl.classList.add('header');
+logooEl.classList.add('header-logo');
+
+
+
+
+
+
 
 
 
