@@ -128,13 +128,15 @@ const employeeNo2 = new Employee("Lana Ali", "Finance", "Senior", "./image/Lana.
 
 const employeeNo3 = new Employee("Tamara Ayoub", "Marketing", "Senior", "./image/Tamara.jpg");
 
-const employeeNo4 = new Employee("Omar Zaid", "Development", "Senior", "./image/Omar.jpg");
+const employeeNo4 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/Safi.jpg");
 
-const employeeNo5 = new Employee("Safi Walid","Admenestration", "Mid-Senior","./image/Safi.jpg");
+const employeeNo5 = new Employee("Omar Zaid", "Development", "Senior", "./image/Omar.jpg");
 
-const employeeNo6 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/Hadi.jpg");
+const employeeNo6 = new Employee("Rana Saleh", "Development", "Junior", "./image/Rana.jpg");
 
-const employeeNo7 = new Employee("Rana Saleh", "Development", "Junior", "./image/Rana.jpg");
+const employeeNo7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "./image/Hadi.jpg");
+
+
     
 
 
@@ -162,10 +164,11 @@ employeeNo7.salary();
 employeeNo1.render();
 employeeNo2.render();
 employeeNo3.render();
-employeeNo4.render();
 employeeNo5.render();
-employeeNo6.render();
+employeeNo4.render();
 employeeNo7.render();
+employeeNo6.render();
+
 
 
 
